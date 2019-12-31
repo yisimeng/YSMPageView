@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YSMPageView_Example' do
+  pod 'YSMPageView', :path => '../'
+
+  target 'YSMPageView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

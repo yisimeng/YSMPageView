@@ -1,0 +1,27 @@
+{
+  "name": "YSMPageView",
+  "version": "0.1.0",
+  "summary": "A short description of YSMPageView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yisimeng/YSMPageView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yisimeng": "465386131@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yisimeng/YSMPageView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YSMPageView/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
+}

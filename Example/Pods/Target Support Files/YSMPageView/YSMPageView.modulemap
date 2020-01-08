@@ -1,0 +1,6 @@
+framework module YSMPageView {
+  umbrella header "YSMPageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

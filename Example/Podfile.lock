@@ -1,0 +1,23 @@
+PODS:
+  - SnapKit (4.2.0)
+  - YSMPageView (0.1.0):
+    - SnapKit
+
+DEPENDENCIES:
+  - YSMPageView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  YSMPageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  YSMPageView: 8ea129219adcdbbbefb5e18c66676629e5a44154
+
+PODFILE CHECKSUM: 1a1737ef804f413d8135d41d9d4534d9827cea5f
+
+COCOAPODS: 1.9.0.beta.2

@@ -14,6 +14,10 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8F75B92A23C57B8600AC8D83 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F75B92923C57B8600AC8D83 /* FirstTableViewController.swift */; };
+		8F75B92C23C57BF000AC8D83 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F75B92B23C57BF000AC8D83 /* SecondTableViewController.swift */; };
+		8F75B92E23C57C0100AC8D83 /* ThirdTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F75B92D23C57C0100AC8D83 /* ThirdTableViewController.swift */; };
+		8F75B93023C57C0C00AC8D83 /* FourthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F75B92F23C57C0C00AC8D83 /* FourthTableViewController.swift */; };
 		D8F74C833769BB2797725EC4 /* Pods_YSMPageView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E83A1D9A4D56415BA523AB /* Pods_YSMPageView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		338C5C23ADA87517BB5B7663 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		54E2BC7294CF38C2CD75166B /* YSMPageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YSMPageView.podspec; path = ../YSMPageView.podspec; sourceTree = "<group>"; };
+		338C5C23ADA87517BB5B7663 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		54E2BC7294CF38C2CD75166B /* YSMPageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YSMPageView.podspec; path = ../YSMPageView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* YSMPageView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSMPageView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,9 +46,13 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		76E83A1D9A4D56415BA523AB /* Pods_YSMPageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSMPageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		779E83CC31E5930D86DF3366 /* Pods_YSMPageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSMPageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82EB621DC076F45E72470A87 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		82EB621DC076F45E72470A87 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		87D989594D3823723078EF1E /* Pods-YSMPageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMPageView_Tests.release.xcconfig"; path = "Target Support Files/Pods-YSMPageView_Tests/Pods-YSMPageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8CD0145BE1DEDC9930FA71A0 /* Pods-YSMPageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMPageView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YSMPageView_Tests/Pods-YSMPageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F75B92923C57B8600AC8D83 /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		8F75B92B23C57BF000AC8D83 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		8F75B92D23C57C0100AC8D83 /* ThirdTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewController.swift; sourceTree = "<group>"; };
+		8F75B92F23C57C0C00AC8D83 /* FourthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTableViewController.swift; sourceTree = "<group>"; };
 		91FE7C1C154E74CBD9F28E1F /* Pods-YSMPageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMPageView_Example.release.xcconfig"; path = "Target Support Files/Pods-YSMPageView_Example/Pods-YSMPageView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D6686E4D6B67D041F28876F1 /* Pods-YSMPageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMPageView_Example.debug.xcconfig"; path = "Target Support Files/Pods-YSMPageView_Example/Pods-YSMPageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +103,10 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				8F75B92923C57B8600AC8D83 /* FirstTableViewController.swift */,
+				8F75B92B23C57BF000AC8D83 /* SecondTableViewController.swift */,
+				8F75B92D23C57C0100AC8D83 /* ThirdTableViewController.swift */,
+				8F75B92F23C57C0C00AC8D83 /* FourthTableViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,7 +168,6 @@
 				8CD0145BE1DEDC9930FA71A0 /* Pods-YSMPageView_Tests.debug.xcconfig */,
 				87D989594D3823723078EF1E /* Pods-YSMPageView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +238,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +325,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YSMPageView_Example/Pods-YSMPageView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YSMPageView/YSMPageView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YSMPageView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +346,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				8F75B92A23C57B8600AC8D83 /* FirstTableViewController.swift in Sources */,
+				8F75B92C23C57BF000AC8D83 /* SecondTableViewController.swift in Sources */,
+				8F75B93023C57C0C00AC8D83 /* FourthTableViewController.swift in Sources */,
+				8F75B92E23C57C0100AC8D83 /* ThirdTableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

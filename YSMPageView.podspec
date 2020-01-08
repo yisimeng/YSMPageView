@@ -32,6 +32,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'YSMPageView/Classes/**/*'
   
+  s.dependency 'SnapKit'
+  
   # s.resource_bundles = {
   #   'YSMPageView' => ['YSMPageView/Assets/*.png']
   # }

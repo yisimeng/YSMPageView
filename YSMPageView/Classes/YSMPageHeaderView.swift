@@ -7,11 +7,13 @@
 
 import UIKit
 
+var titleViewHeight: CGFloat = 50
+
 protocol YSMPageTitleViewDelegate: class {
-    func titleView(_ titleView: YSMPageTitleView, didSelect index: Int)
+    func titleView(_ titleView: YSMPageHeaderView, didSelect index: Int)
 }
 
-class YSMPageTitleView: UIView {
+class YSMPageHeaderView: UIView {
 
     var scrollView: UIScrollView = UIScrollView()
     
@@ -28,8 +30,11 @@ class YSMPageTitleView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        scrollView.frame = bounds
         addSubview(scrollView)
+        scrollView.snp.makeConstraints { (make) in
+            make.bottom.left.right.equalToSuperview()
+            make.height.equalTo(titleViewHeight)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -38,7 +43,7 @@ class YSMPageTitleView: UIView {
     
 }
 
-extension YSMPageTitleView {
+extension YSMPageHeaderView {
     
     fileprivate func setupTitleLabels() {
         for (index,title) in titleArray.enumerated() {
@@ -68,15 +73,15 @@ extension YSMPageTitleView {
         for (index, label) in titleLabels.enumerated() {
             //获取title宽度
             let w:CGFloat = (titleArray[index] as NSString).boundingRect(with: CGSize(width:CGFloat(MAXFLOAT), height: 0), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 16)], context: nil).width+20
-            label.frame = CGRect(x: maxX, y: 0, width: w, height: bounds.height)
+            label.frame = CGRect(x: maxX, y: 0, width: w, height: titleViewHeight)
             maxX = label.frame.maxX+20
         }
-        scrollView.contentSize = CGSize(width: maxX, height: bounds.height)
+        scrollView.contentSize = CGSize(width: maxX, height: titleViewHeight)
     }
     
     private var titlesTotalWidth: CGFloat {
         let titles: String = titleArray.joined()
-        return NSString(string: titles).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: self.bounds.height), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 68)], context: nil).width
+        return NSString(string: titles).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: titleViewHeight), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 68)], context: nil).width
     }
     
     @objc func titleLabelDidClick(_ tap: UITapGestureRecognizer) {

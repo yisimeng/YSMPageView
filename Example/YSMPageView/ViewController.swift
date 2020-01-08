@@ -28,10 +28,9 @@ class ViewController: UIViewController {
         headerView.backgroundColor = .cyan
         
         
-        let pageView = YSMPageView(frame: CGRect(x: 0, y: kStatusBarHeight, width: view.bounds.width, height: view.bounds.height-kStatusBarHeight))
-        pageView.headerHangingHeight = 64
-        pageView.headerView = headerView
-        pageView.dataSource = self
+        let pageView = YSMPageView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
+//        pageView.headerHangingHeight = 64
+//        pageView.headerView = headerView
         view.addSubview(pageView)
 
         let viewController1 = FirstTableViewController(style: .plain)
@@ -39,7 +38,7 @@ class ViewController: UIViewController {
         let viewController3 = ThirdTableViewController(style: .plain)
         let viewController4 = FourthTableViewController(style: .plain)
         pageView.viewControllerTitles = ["第一","第二", "第三","第四"]
-        viewControllers.append(contentsOf: [viewController1,viewController2,viewController3,viewController4])
+        pageView.viewControllers = [viewController1,viewController2,viewController3,viewController4]
         
         
     }
@@ -51,14 +50,3 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: YSMPageViewDataSource {
-    func numberOfChildViewController(in pageView: YSMPageView) -> Int {
-        return viewControllers.count
-    }
-    
-    func pageView(_ pageView: YSMPageView, childViewControllerAt index: Int) -> UIViewController {
-        return viewControllers[index]
-    }
-    
-    
-}

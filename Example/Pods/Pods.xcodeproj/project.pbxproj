@@ -17,7 +17,6 @@
 		35CDFA197D8219EB8DEFC227259A5C03 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */; };
 		4268E348E6D5E9037A640ADC8E065009 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */; };
 		479BB9AA1EE758898E3E34003C13757E /* Pods-YSMPageView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 691E107D543E7CA5E83D9D4FC9CE8C01 /* Pods-YSMPageView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A427FE1697046009F4D346AF86CEE9B /* YSMPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BC9D4447AB3155428802E4BD90A5B /* YSMPageView.swift */; };
 		4B13812A49D086F4BCA9E85801C0ADCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FE473E37EFB8571E729F9B375CE60E /* Foundation.framework */; };
 		54D1686EFA926E23C4BED5EEE7A19C08 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */; };
 		5544BDD6A14E06C7FB3A878BC3E96299 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */; };
@@ -26,26 +25,26 @@
 		660FC3A9304CAAC0685DD8F6C6082E96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FE473E37EFB8571E729F9B375CE60E /* Foundation.framework */; };
 		67776864843D84DC929C1B66FF8C94F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FE473E37EFB8571E729F9B375CE60E /* Foundation.framework */; };
 		6B43F2F53DD6C161CF414A9BF67550C5 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */; };
-		703A774DE4EDFF9FCCA221109D70178D /* YSMPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BACDC2FF412AB15D41154E7F257F8EC /* YSMPageTitleView.swift */; };
 		72C2B5D60A24B4B663C8994276A962B6 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */; };
+		73D676112638A28D3120FA4B4E7C7874 /* YSMPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175EA4A0ECEFA60347B14B3314F312A /* YSMPageContentView.swift */; };
 		77A618FE4FF299682F776C974300EBA1 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */; };
 		7ED12926E82C9D1DE457504DA75B80A9 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */; };
+		84E30BADE56CEE18A3359584E1C199D2 /* YSMPageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A5296C753DAA2C623FF2CCDE616AFD /* YSMPageHeaderView.swift */; };
 		8B8BE709B46663F60DB6A661A3B2A28A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */; };
 		9432185152350A4A90F6DD19C33AC057 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */; };
 		98AE4E2F24A858A47B5A1B405CEAD8FD /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */; };
 		9E6184458532BFF2E3E3F804C54BD0E7 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */; };
 		9EE2D363A721ACFA89B5B899E1987633 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */; };
 		A04D46C4C48247D004BAE5C7AD6E05A3 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */; };
-		A0768348033F8166D0C999A57B7A6D46 /* YSMPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7D237A1AEB2971ED50C7C0696117B4 /* YSMPageContentView.swift */; };
 		A3DEA82F229FDF7C9444CEFEE3D9AB84 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */; };
 		A4070B8C9BD30965648B2876CD3C1C43 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */; };
 		A482F623A133B7E947C01456C779622A /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */; };
-		B73C7ACE2A71EC6C2A5CC23398B0F91C /* YSMPageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A7162B1EAD8A70A37721707B18E445 /* YSMPageView-dummy.m */; };
 		BEB277E408E9F87220C58BA6128BA11F /* Pods-YSMPageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C30BB74B7F86DE56DCF51FD91141955 /* Pods-YSMPageView_Tests-dummy.m */; };
 		BF7843175A0FB0180B6F4C0249B8874A /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */; };
-		BFA3638FC499152016B203EBC5E44F0F /* YSMPageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51BFA8EB7BD37B025A1A577601FCE0AB /* YSMPageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA3638FC499152016B203EBC5E44F0F /* YSMPageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C019BA8BEEC8B97B9B2F4928C2563D /* YSMPageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1C2B61E08DAD3B59BA5D82964D39C3C /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */; };
 		CA0FAE669FAB7067D09F7007AD838E19 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */; };
+		D149C6B47DE9E7BDED27910D026980A3 /* YSMPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAAF31A433538A6C0781B8FF522C6D5 /* YSMPageView.swift */; };
 		DBB93D3827327B8FB4CFA164C03357E5 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */; };
 		DCCEFF1B52226DE5ABB2D0043442FE61 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */; };
 		DEC3E541DB551729EC407FA6566CEE54 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */; };
@@ -55,6 +54,7 @@
 		F3A21E833418F6B0B468CBC264B68381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FE473E37EFB8571E729F9B375CE60E /* Foundation.framework */; };
 		F41CA723E31884664B9C032D90EAEF1A /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */; };
 		F6C7F81AA5BBC4042A3A78D5EA8E62A4 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */; };
+		FA89095E6B18F943AEA71F3CFE5582B8 /* YSMPageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E1CFA9BB312AC70A50C15449F1DCF7 /* YSMPageView-dummy.m */; };
 		FF0E3F8B3FB568ACBB1BC433D67ED093 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */; };
 		FFE7A02118B5288BC94F7422D6CFEB3F /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */; };
 /* End PBXBuildFile section */
@@ -91,21 +91,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005BC9D4447AB3155428802E4BD90A5B /* YSMPageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YSMPageView.swift; path = YSMPageView/Classes/YSMPageView.swift; sourceTree = "<group>"; };
 		00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		01E25DE0F99A32D861343513758992EB /* Pods_YSMPageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YSMPageView_Example.framework; path = "Pods-YSMPageView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		027F60E807CD872B7560C002D67D62CE /* YSMPageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YSMPageView.modulemap; sourceTree = "<group>"; };
+		094A0F2CA6A241A07EBC3D1376288252 /* YSMPageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YSMPageView.modulemap; sourceTree = "<group>"; };
 		09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		14FE473E37EFB8571E729F9B375CE60E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1BA85F3D7C8DB385CE531CD6CB85D041 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BACDC2FF412AB15D41154E7F257F8EC /* YSMPageTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YSMPageTitleView.swift; path = YSMPageView/Classes/YSMPageTitleView.swift; sourceTree = "<group>"; };
 		1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		1E9F0A0E9C2A1C3E2E69022B2BD0BDEA /* Pods-YSMPageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YSMPageView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		20734593E56AC69ABDBD9D7AD958E819 /* Pods-YSMPageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YSMPageView_Example.modulemap"; sourceTree = "<group>"; };
-		25DF371266DD9BD0C37CC98829319A5F /* YSMPageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YSMPageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		21CC05FCB25B09CD33763DC1CF269C0C /* YSMPageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YSMPageView-Info.plist"; sourceTree = "<group>"; };
 		29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		2BAAF31A433538A6C0781B8FF522C6D5 /* YSMPageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YSMPageView.swift; path = YSMPageView/Classes/YSMPageView.swift; sourceTree = "<group>"; };
 		2BB002AD222F81058F0D22DBAA7F9862 /* Pods-YSMPageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSMPageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		3809EFDA9EFE40DAFE11403EA0002FCC /* Pods-YSMPageView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSMPageView_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -117,11 +116,11 @@
 		4537E5220E56EB588C90715780422153 /* YSMPageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YSMPageView.framework; path = YSMPageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		494B30837DE8A565BD4CC93196D49245 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		51BFA8EB7BD37B025A1A577601FCE0AB /* YSMPageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSMPageView-umbrella.h"; sourceTree = "<group>"; };
+		574BD8DC79123442F419EEB4CD79263F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		5B206C502A0FDE4CE6107DDE7188C84F /* YSMPageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSMPageView.release.xcconfig; sourceTree = "<group>"; };
 		60817630D7A54EA863B56F6F97FED8E3 /* Pods-YSMPageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSMPageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		68836D1307CD037677FCADB2128F741D /* Pods-YSMPageView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YSMPageView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -135,39 +134,40 @@
 		785B359D91C03615D1028627817D5F0A /* Pods-YSMPageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YSMPageView_Tests.modulemap"; sourceTree = "<group>"; };
 		7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		7C30BB74B7F86DE56DCF51FD91141955 /* Pods-YSMPageView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YSMPageView_Tests-dummy.m"; sourceTree = "<group>"; };
+		7DE432F12027A0E5DAC38DBB55B972F2 /* YSMPageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSMPageView-prefix.pch"; sourceTree = "<group>"; };
 		807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		82A7162B1EAD8A70A37721707B18E445 /* YSMPageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YSMPageView-dummy.m"; sourceTree = "<group>"; };
 		848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
 		87816142E89908474BAAD7301FED008D /* Pods-YSMPageView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSMPageView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		87CF6D3F6DB2365DC82453F16CFB133E /* Pods-YSMPageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YSMPageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A1725AD1BE691AC25AC626CF64C3F7D /* Pods-YSMPageView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YSMPageView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		90A5296C753DAA2C623FF2CCDE616AFD /* YSMPageHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YSMPageHeaderView.swift; path = YSMPageView/Classes/YSMPageHeaderView.swift; sourceTree = "<group>"; };
 		91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		9687C8EEA9B0A09882553FD05E94C896 /* YSMPageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YSMPageView-Info.plist"; sourceTree = "<group>"; };
+		9175EA4A0ECEFA60347B14B3314F312A /* YSMPageContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YSMPageContentView.swift; path = YSMPageView/Classes/YSMPageContentView.swift; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C4FA9646D9FB59255F11DDF0925C5D5 /* YSMPageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSMPageView.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0426269B82D15739E33B308A66C90D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
 		B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		BB7D237A1AEB2971ED50C7C0696117B4 /* YSMPageContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YSMPageContentView.swift; path = YSMPageView/Classes/YSMPageContentView.swift; sourceTree = "<group>"; };
 		C1D2E8ECF75432326B59561F3FF42A64 /* Pods_YSMPageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YSMPageView_Tests.framework; path = "Pods-YSMPageView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		CBD4D615A1975B1A5332698148BA4305 /* Pods-YSMPageView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YSMPageView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CDCDA42BB4FF7A8123EDBE72B14DC942 /* YSMPageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSMPageView.release.xcconfig; sourceTree = "<group>"; };
 		D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		D7C019BA8BEEC8B97B9B2F4928C2563D /* YSMPageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSMPageView-umbrella.h"; sourceTree = "<group>"; };
 		DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		E0E1CFA9BB312AC70A50C15449F1DCF7 /* YSMPageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YSMPageView-dummy.m"; sourceTree = "<group>"; };
 		E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		EE063F85E19F032B5E1ADE479E1C76B6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F0A6223DE7FA5F1233269A3D78BD931B /* YSMPageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YSMPageView-prefix.pch"; sourceTree = "<group>"; };
+		EBA47CA8641556474AE4A81A8E0AF1ED /* YSMPageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YSMPageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F34BC2D8371D0C8D54B8A91531A95626 /* YSMPageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YSMPageView.debug.xcconfig; sourceTree = "<group>"; };
 		FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,22 +225,27 @@
 			path = "Target Support Files/Pods-YSMPageView_Example";
 			sourceTree = "<group>";
 		};
-		04984DE308B7E7C5F3F40535D0108AB7 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				494B30837DE8A565BD4CC93196D49245 /* LICENSE */,
-				EE063F85E19F032B5E1ADE479E1C76B6 /* README.md */,
-				25DF371266DD9BD0C37CC98829319A5F /* YSMPageView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		06731483DD46B3CA32A6778216ED5247 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				82433A6F8BD52837A2506C219B08DC8B /* YSMPageView */,
+				B7DA1D05F87ECEEFF7D548E8946CEB66 /* YSMPageView */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		163980F342C75AFDF8596AA174AFC13B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				094A0F2CA6A241A07EBC3D1376288252 /* YSMPageView.modulemap */,
+				E0E1CFA9BB312AC70A50C15449F1DCF7 /* YSMPageView-dummy.m */,
+				21CC05FCB25B09CD33763DC1CF269C0C /* YSMPageView-Info.plist */,
+				7DE432F12027A0E5DAC38DBB55B972F2 /* YSMPageView-prefix.pch */,
+				D7C019BA8BEEC8B97B9B2F4928C2563D /* YSMPageView-umbrella.h */,
+				F34BC2D8371D0C8D54B8A91531A95626 /* YSMPageView.debug.xcconfig */,
+				5B206C502A0FDE4CE6107DDE7188C84F /* YSMPageView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YSMPageView";
 			sourceTree = "<group>";
 		};
 		427B270BD76A5EF45313FBF29233B96D /* Pods */ = {
@@ -269,34 +274,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		81302D9C2AA9E8E1BB98346F1A48CB36 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				027F60E807CD872B7560C002D67D62CE /* YSMPageView.modulemap */,
-				82A7162B1EAD8A70A37721707B18E445 /* YSMPageView-dummy.m */,
-				9687C8EEA9B0A09882553FD05E94C896 /* YSMPageView-Info.plist */,
-				F0A6223DE7FA5F1233269A3D78BD931B /* YSMPageView-prefix.pch */,
-				51BFA8EB7BD37B025A1A577601FCE0AB /* YSMPageView-umbrella.h */,
-				9C4FA9646D9FB59255F11DDF0925C5D5 /* YSMPageView.debug.xcconfig */,
-				CDCDA42BB4FF7A8123EDBE72B14DC942 /* YSMPageView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/YSMPageView";
-			sourceTree = "<group>";
-		};
-		82433A6F8BD52837A2506C219B08DC8B /* YSMPageView */ = {
-			isa = PBXGroup;
-			children = (
-				BB7D237A1AEB2971ED50C7C0696117B4 /* YSMPageContentView.swift */,
-				1BACDC2FF412AB15D41154E7F257F8EC /* YSMPageTitleView.swift */,
-				005BC9D4447AB3155428802E4BD90A5B /* YSMPageView.swift */,
-				04984DE308B7E7C5F3F40535D0108AB7 /* Pod */,
-				81302D9C2AA9E8E1BB98346F1A48CB36 /* Support Files */,
-			);
-			name = YSMPageView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		9D030A2B620ADA8FF8A5C3650FA6C468 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +283,19 @@
 				4537E5220E56EB588C90715780422153 /* YSMPageView.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B7DA1D05F87ECEEFF7D548E8946CEB66 /* YSMPageView */ = {
+			isa = PBXGroup;
+			children = (
+				9175EA4A0ECEFA60347B14B3314F312A /* YSMPageContentView.swift */,
+				90A5296C753DAA2C623FF2CCDE616AFD /* YSMPageHeaderView.swift */,
+				2BAAF31A433538A6C0781B8FF522C6D5 /* YSMPageView.swift */,
+				D50516B7473DAF17B08706C1C2D8C009 /* Pod */,
+				163980F342C75AFDF8596AA174AFC13B /* Support Files */,
+			);
+			name = YSMPageView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */ = {
@@ -386,6 +376,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D50516B7473DAF17B08706C1C2D8C009 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				574BD8DC79123442F419EEB4CD79263F /* LICENSE */,
+				A0426269B82D15739E33B308A66C90D0 /* README.md */,
+				EBA47CA8641556474AE4A81A8E0AF1ED /* YSMPageView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		F793FD819457699F56B56278B9905614 /* Pods-YSMPageView_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,7 +463,7 @@
 			buildConfigurationList = CB897CD4A56D0C4C7D15AC289CF395C5 /* Build configuration list for PBXNativeTarget "YSMPageView" */;
 			buildPhases = (
 				342A5021F026833AB7D7647D367B9625 /* Headers */,
-				0B6D1C3D594342E45E37B3A095ED7E07 /* Sources */,
+				919AD8E32B21B31C1E5BD35751D26CED /* Sources */,
 				93532DA9EA798FC77BB997BB2B468C2A /* Frameworks */,
 				7DE868A287123B262D52D8812A3ED850 /* Resources */,
 			);
@@ -578,22 +578,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B6D1C3D594342E45E37B3A095ED7E07 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0768348033F8166D0C999A57B7A6D46 /* YSMPageContentView.swift in Sources */,
-				703A774DE4EDFF9FCCA221109D70178D /* YSMPageTitleView.swift in Sources */,
-				B73C7ACE2A71EC6C2A5CC23398B0F91C /* YSMPageView-dummy.m in Sources */,
-				4A427FE1697046009F4D346AF86CEE9B /* YSMPageView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0FD990BC04C796E99C198070147EA5CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				00DEF58CF32DAC3D930F4C4351603D86 /* Pods-YSMPageView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919AD8E32B21B31C1E5BD35751D26CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D676112638A28D3120FA4B4E7C7874 /* YSMPageContentView.swift in Sources */,
+				84E30BADE56CEE18A3359584E1C199D2 /* YSMPageHeaderView.swift in Sources */,
+				FA89095E6B18F943AEA71F3CFE5582B8 /* YSMPageView-dummy.m in Sources */,
+				D149C6B47DE9E7BDED27910D026980A3 /* YSMPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,38 +711,6 @@
 			};
 			name = Release;
 		};
-		2E6C7DF0C2D4EE95D1980541A71466A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDCDA42BB4FF7A8123EDBE72B14DC942 /* YSMPageView.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YSMPageView/YSMPageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YSMPageView/YSMPageView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YSMPageView/YSMPageView.modulemap";
-				PRODUCT_MODULE_NAME = YSMPageView;
-				PRODUCT_NAME = YSMPageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3F9E4204C0A1F1D5405D571511B80F7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */;
@@ -807,6 +775,37 @@
 			};
 			name = Debug;
 		};
+		582110B6E2D409F841E19A53BC2C6BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F34BC2D8371D0C8D54B8A91531A95626 /* YSMPageView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YSMPageView/YSMPageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YSMPageView/YSMPageView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YSMPageView/YSMPageView.modulemap";
+				PRODUCT_MODULE_NAME = YSMPageView;
+				PRODUCT_NAME = YSMPageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		74166CAECD7B95DCAABA1DA86A36B270 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C9953E7B41577AF139B065FF618A5C4 /* Pods-YSMPageView_Example.release.xcconfig */;
@@ -841,6 +840,38 @@
 			};
 			name = Release;
 		};
+		8C4153C9921C3370671426EF6DEF8092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B206C502A0FDE4CE6107DDE7188C84F /* YSMPageView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YSMPageView/YSMPageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YSMPageView/YSMPageView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YSMPageView/YSMPageView.modulemap";
+				PRODUCT_MODULE_NAME = YSMPageView;
+				PRODUCT_NAME = YSMPageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		977F2BC326FC1FBE8A023F31D1B7AF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87CF6D3F6DB2365DC82453F16CFB133E /* Pods-YSMPageView_Tests.debug.xcconfig */;
@@ -868,37 +899,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AD974C56BC36563774145B12A74DD6F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C4FA9646D9FB59255F11DDF0925C5D5 /* YSMPageView.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YSMPageView/YSMPageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YSMPageView/YSMPageView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YSMPageView/YSMPageView.modulemap";
-				PRODUCT_MODULE_NAME = YSMPageView;
-				PRODUCT_NAME = YSMPageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1094,8 +1094,8 @@
 		CB897CD4A56D0C4C7D15AC289CF395C5 /* Build configuration list for PBXNativeTarget "YSMPageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD974C56BC36563774145B12A74DD6F6 /* Debug */,
-				2E6C7DF0C2D4EE95D1980541A71466A6 /* Release */,
+				582110B6E2D409F841E19A53BC2C6BE6 /* Debug */,
+				8C4153C9921C3370671426EF6DEF8092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,14 +6,11 @@
 //
 
 import UIKit
+import SnapKit
+
+let kStatusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
 
 let YSMPageCollectionCellReuseID = "YSMPageCollectionCellReuseID"
-
-public protocol YSMPageViewDataSource: class {
-    func numberOfChildViewController(in pageView: YSMPageView) -> Int
-    
-    func pageView(_ pageView: YSMPageView, childViewControllerAt index: Int) -> UIViewController
-}
 
 public protocol YSMPageViewDelegate: class {
     func pageView(_ pageView: YSMPageView, didScrollToChildViewControllerAt index: Int)
@@ -59,60 +56,46 @@ extension UIViewController: YSMPageViewChildControllerDelegate{}
 
 public class YSMPageView: UIView {
 
-    public private(set) var viewControllers: [UIViewController] = []
+    public var viewControllers: [UIViewController] = []
     
-    public weak var dataSource: YSMPageViewDataSource!
     public weak var delegate: YSMPageViewDelegate?
     
     public var viewControllerTitles: [String] = []{
         didSet{
-            titleView.titleArray = viewControllerTitles
-            if titleView.superview == nil {
-                addSubview(titleView)
-            }
+            headerView.titleArray = viewControllerTitles
         }
     }
     
-    var headerViewHeight: CGFloat = 0
-    public var headerView: UIView? {
-        didSet{
-            headerViewHeight = headerView?.frame.height ?? 0
-            if let headerView = headerView {
-                addSubview(headerView)
-                titleView.frame = CGRect(x: 0, y: headerViewHeight, width: self.bounds.width, height: 50)
-            }
-        }
-    }
     // 悬停高度
     public var headerHangingHeight: CGFloat = 0
     
-    private lazy var titleView: YSMPageTitleView = {
-        let titleView = YSMPageTitleView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: 50))
+    var headerViewHeight: CGFloat = kStatusBarHeight+50
+    
+    private lazy var headerView: YSMPageHeaderView = {
+        let titleView = YSMPageHeaderView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: headerViewHeight))
         titleView.delegate = self
         return titleView
     }()
     
-    private lazy var collectionView: UICollectionView = {
-        let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .horizontal
-        flowLayout.itemSize = self.frame.size
-        flowLayout.minimumInteritemSpacing = 0
-        flowLayout.minimumLineSpacing = 0
-        
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 50, width: self.bounds.width, height: self.bounds.height-50), collectionViewLayout: flowLayout)
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.isPagingEnabled = true
-        collectionView.bounces = false
-        collectionView.backgroundColor = .white
-        collectionView.showsHorizontalScrollIndicator = false
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: YSMPageCollectionCellReuseID)
+    private lazy var collectionView: YSMPageContentView = {
+        let collectionView = YSMPageContentView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
+        collectionView.contentDataSource = self
+        collectionView.contentDelegate = self
         return collectionView
     }()
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(collectionView)
+        addSubview(headerView)
+        
+        collectionView.snp.makeConstraints { make in
+            make.top.bottom.left.right.equalToSuperview()
+        }
+        headerView.snp.makeConstraints { (make) in
+            make.top.left.right.equalToSuperview()
+            make.height.equalTo(headerViewHeight)
+        }
     }
     
     required public init?(coder: NSCoder) {
@@ -129,92 +112,34 @@ private extension YSMPageView {
     }
 }
 
-extension YSMPageView: UICollectionViewDelegate{
+extension YSMPageView: YSMPageContentViewDataSource{
     
-    public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        guard let childViewController = dataSource?.pageView(self, childViewControllerAt: indexPath.row) else { return }
-        // FIXME: - 将要显示回调
-        cell.contentView.addSubview(childViewController.view)
+    func numberOfChildViewController(in contentView: YSMPageContentView) -> Int {
+        return viewControllers.count
     }
     
-    public func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        // 结束显示，clean cell
-        cell.contentView.removeAllSubViews()
+    func contentView(_ contentView: YSMPageContentView, childViewControllerAt index: Int) -> UIViewController {
+        let childViewController: UIViewController = viewControllers[index]
+        return childViewController
     }
-    
-    /// 滑动停止
-    /// - Parameter scrollView: <#scrollView description#>
-    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let currentIndex: Int = Int(scrollView.contentOffset.x / scrollView.bounds.size.width)
-        delegate?.pageView(self, didScrollToChildViewControllerAt: currentIndex)
-        titleView.didSelectTitle(at: currentIndex)
-    }
-    
 }
-
-extension YSMPageView: UICollectionViewDataSource{
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSource?.numberOfChildViewController(in: self) ?? 0
-    }
-    
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: YSMPageCollectionCellReuseID, for: indexPath)
-        
-        guard let childViewController = dataSource?.pageView(self, childViewControllerAt: indexPath.row) else { return cell }
-        if !viewControllers.contains(childViewController) {
-            add(child: childViewController)
-            if let scrollView = childViewController.childScrollView {
-                if #available(iOS 11.0, *) {
-                    childViewController.childScrollView?.contentInsetAdjustmentBehavior = .never
-                }else {
-                    childViewController.automaticallyAdjustsScrollViewInsets = false
-                }
-                let contentInset = UIEdgeInsets(top: headerViewHeight, left: 0, bottom: 0, right: 0)
-                scrollView.contentInset = contentInset
-                scrollView.scrollIndicatorInsets = contentInset
-                scrollView.addObserver(self, forKeyPath: "contentOffset", options: .new, context: nil)
-            }
-            
-        }
-        return cell
+extension YSMPageView: YSMPageContentViewDelegate {
+    func contentView(_ contentView: YSMPageContentView, didScrollToChildViewControllerAt index: Int) {
+        headerView.didSelectTitle(at: index)
     }
 }
 
-// KVO
-extension YSMPageView {
-    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath != "contentOffset" {
-            return super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
-        }
-        guard let headerView = headerView else { return }
-        guard let contentOffset: CGPoint = change?[NSKeyValueChangeKey.newKey] as? CGPoint else { return }
-        
-        var headerFrame: CGRect = headerView.frame
-        if contentOffset.y < -headerViewHeight {
-            // header 完全显示后，继续下拉
-            headerFrame.origin.y = 0
-            let height = (-headerViewHeight) - contentOffset.y
-            headerFrame.size.height = height + headerViewHeight
-        }else if contentOffset.y <= -headerHangingHeight{
-            // header初始位置到悬停位置之间
-            headerFrame.origin.y = -(headerViewHeight + contentOffset.y)
-            headerFrame.size.height = headerViewHeight
-        }else {
-            headerFrame.origin.y = headerHangingHeight - headerViewHeight
-        }
-        headerView.frame = headerFrame
-        
-//        let offset: CGPoint = CGPoint(x: contentOffset.x, y: contentOffset.y + headerViewHeight)
-//        delegate?.pageView(self, didScrollContentOffset: offset)
-    }
-}
 
 extension YSMPageView: YSMPageTitleViewDelegate{
-    func titleView(_ titleView: YSMPageTitleView, didSelect index: Int) {
+    func titleView(_ titleView: YSMPageHeaderView, didSelect index: Int) {
         let targetIndexPath = IndexPath(item: index, section: 0)
-        collectionView.scrollToItem(at: targetIndexPath, at: .left, animated: false)
+        collectionView.scrollToItem(at: targetIndexPath, at: .left, animated: true)
     }
 }
+
+
+
+
 
 extension UIView {
     
@@ -237,12 +162,13 @@ extension UIView {
             if let parent = _parentViewController {
                 return parent
             }else {
-                while var superView: UIView = self.superview {
-                    let responder = superView.next
+                var superView = self.superview
+                while superView != nil {
+                    let responder = superView!.next
                     if (responder?.isKind(of: UIViewController.self))! {
                         return responder as? UIViewController
                     }
-                    superView = superView.superview!
+                    superView = superView!.superview!
                 }
                 return nil
             }

@@ -15,6 +15,14 @@ protocol YSMPageTitleViewDelegate: class {
 
 class YSMPageHeaderView: UIView {
 
+    var headerView: UIView? {
+        didSet{
+            guard let headerView = headerView else { return }
+            headerView.autoresizingMask = [.flexibleHeight]
+            addSubview(headerView)
+        }
+    }
+    
     var scrollView: UIScrollView = UIScrollView()
     
     var titleArray: [String] = []{
@@ -30,11 +38,12 @@ class YSMPageHeaderView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .white
+        scrollView.backgroundColor = .yellow
+        scrollView.frame = CGRect(x: 0, y: frame.height-50, width: frame.width, height: 50)
+        scrollView.autoresizingMask = [.flexibleTopMargin]
         addSubview(scrollView)
-        scrollView.snp.makeConstraints { (make) in
-            make.bottom.left.right.equalToSuperview()
-            make.height.equalTo(titleViewHeight)
-        }
+        
     }
     
     required init?(coder: NSCoder) {

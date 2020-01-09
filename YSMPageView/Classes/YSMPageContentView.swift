@@ -9,6 +9,7 @@ import UIKit
 
 protocol YSMPageContentViewDelegate: class {
     func contentView(_ contentView: YSMPageContentView, didScrollToChildViewControllerAt index: Int)
+    func contentView(_ contentView: YSMPageContentView, verticalScroll offsetY: CGFloat)
 }
 
 protocol YSMPageContentViewDataSource: class {
@@ -21,7 +22,7 @@ class YSMPageContentView: UICollectionView {
     
     private(set) var viewControllers: [UIViewController] = []
     
-    var headerViewHeight: CGFloat = kStatusBarHeight+50
+    var headerViewHeight: CGFloat = 50
     
     weak var contentDataSource: YSMPageContentViewDataSource?
     weak var contentDelegate: YSMPageContentViewDelegate?
@@ -68,7 +69,7 @@ extension YSMPageContentView: UICollectionViewDataSource {
                 }else {
                     childViewController.automaticallyAdjustsScrollViewInsets = false
                 }
-                let contentInset = UIEdgeInsets(top: headerViewHeight-kStatusBarHeight, left: 0, bottom: 0, right: 0)
+                let contentInset = UIEdgeInsets(top: headerViewHeight, left: 0, bottom: 0, right: 0)
                 scrollView.contentInset = contentInset
                 scrollView.scrollIndicatorInsets = contentInset
                 scrollView.addObserver(self, forKeyPath: "contentOffset", options: .new, context: nil)
@@ -91,6 +92,9 @@ extension YSMPageContentView: UICollectionViewDelegate {
         //FIXME: 控制将要显示的scrollView的偏移量
          */
         cell.contentView.addSubview(childViewController.view)
+        if let scrollView = childViewController.childScrollView {
+            scrollView.contentOffset = CGPoint(x: 0, y: -headerViewHeight)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -99,7 +103,7 @@ extension YSMPageContentView: UICollectionViewDelegate {
     }
     
     /// 滑动停止
-    /// - Parameter scrollView: <#scrollView description#>
+    /// - Parameter scrollView:
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let currentIndex: Int = Int(scrollView.contentOffset.x / scrollView.bounds.size.width)
         contentDelegate?.contentView(self, didScrollToChildViewControllerAt: currentIndex)
@@ -113,25 +117,7 @@ extension YSMPageContentView {
         if keyPath != "contentOffset" {
             return super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
-//        guard let headerView = headerView else { return }
-//        guard let contentOffset: CGPoint = change?[NSKeyValueChangeKey.newKey] as? CGPoint else { return }
-//
-//        var headerFrame: CGRect = headerView.frame
-//        if contentOffset.y < -headerViewHeight {
-//            // header 完全显示后，继续下拉
-//            headerFrame.origin.y = 0
-//            let height = (-headerViewHeight) - contentOffset.y
-//            headerFrame.size.height = height + headerViewHeight
-//        }else if contentOffset.y <= -headerHangingHeight{
-//            // header初始位置到悬停位置之间
-//            headerFrame.origin.y = -(headerViewHeight + contentOffset.y)
-//            headerFrame.size.height = headerViewHeight
-//        }else {
-//            headerFrame.origin.y = headerHangingHeight - headerViewHeight
-//        }
-//        headerView.frame = headerFrame
-//        
-//        let offset: CGPoint = CGPoint(x: contentOffset.x, y: contentOffset.y + headerViewHeight)
-//        delegate?.pageView(self, didScrollContentOffset: offset)
+        guard let contentOffset: CGPoint = change?[NSKeyValueChangeKey.newKey] as? CGPoint else { return }
+        contentDelegate?.contentView(self, verticalScroll: contentOffset.y)
     }
 }

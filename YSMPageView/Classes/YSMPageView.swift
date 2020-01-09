@@ -69,7 +69,19 @@ public class YSMPageView: UIView {
     // 悬停高度
     public var headerHangingHeight: CGFloat = 0
     
-    var headerViewHeight: CGFloat = kStatusBarHeight+50
+    public var pageHeaderView: UIView?{
+        didSet{
+            headerViewHeight = headerViewHeight+(pageHeaderView?.frame.height ?? 0)
+            headerView.frame = CGRect(x: headerView.frame.minX, y: headerView.frame.minY, width: headerView.frame.width, height: headerViewHeight)
+            headerView.headerView = pageHeaderView
+        }
+    }
+    
+    var headerViewHeight: CGFloat = 50{
+        didSet {
+            collectionView.headerViewHeight = headerViewHeight
+        }
+    }
     
     private lazy var headerView: YSMPageHeaderView = {
         let titleView = YSMPageHeaderView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: headerViewHeight))
@@ -89,13 +101,6 @@ public class YSMPageView: UIView {
         addSubview(collectionView)
         addSubview(headerView)
         
-        collectionView.snp.makeConstraints { make in
-            make.top.bottom.left.right.equalToSuperview()
-        }
-        headerView.snp.makeConstraints { (make) in
-            make.top.left.right.equalToSuperview()
-            make.height.equalTo(headerViewHeight)
-        }
     }
     
     required public init?(coder: NSCoder) {
@@ -124,6 +129,22 @@ extension YSMPageView: YSMPageContentViewDataSource{
     }
 }
 extension YSMPageView: YSMPageContentViewDelegate {
+    func contentView(_ contentView: YSMPageContentView, verticalScroll offsetY: CGFloat) {
+        var headerFrame = headerView.frame        
+        // 初始静止状态offsetY=-250
+        if offsetY < -headerViewHeight + kStatusBarHeight {
+            // 初始位置继续下拉
+            headerFrame.origin.y = 0
+            let height = (-headerViewHeight+kStatusBarHeight) - offsetY
+            headerFrame.size.height = height + headerViewHeight
+        }else if offsetY < -headerHangingHeight {
+            // 初始位置与悬停之间
+            headerFrame.origin.y = -(headerViewHeight - kStatusBarHeight + offsetY)
+            headerFrame.size.height = headerViewHeight
+        }
+        headerView.frame = headerFrame
+    }
+    
     func contentView(_ contentView: YSMPageContentView, didScrollToChildViewControllerAt index: Int) {
         headerView.didSelectTitle(at: index)
     }

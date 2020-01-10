@@ -29,18 +29,23 @@ class ViewController: UIViewController {
         
         
         let pageView = YSMPageView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
-        pageView.headerHangingHeight = 88
         pageView.pageHeaderView = headerView
         view.addSubview(pageView)
 
         let viewController1 = FirstTableViewController(style: .plain)
+        viewController1.pageTitle = "第一个"
         let viewController2 = SecondTableViewController(style: .plain)
+        viewController2.pageTitle = "第二个"
         let viewController3 = ThirdTableViewController(style: .plain)
+        viewController3.pageTitle = "第ssan个"
         let viewController4 = FourthTableViewController(style: .plain)
+        viewController4.pageTitle = "第si个"
         let viewController5 = FirstTableViewController(style: .plain)
+        viewController5.pageTitle = "第wu个"
         let viewController6 = FirstTableViewController(style: .plain)
+        viewController6.pageTitle = "第liu个"
         let viewController7 = FirstTableViewController(style: .plain)
-        pageView.viewControllerTitles = ["第一","第二", "第三","第四","第五","第六","第i七"]
+        viewController7.pageTitle = "第qi个"
         pageView.viewControllers = [viewController1,viewController2,viewController3,viewController4,viewController5,viewController6,viewController7]
         
         

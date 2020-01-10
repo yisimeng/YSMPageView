@@ -39,7 +39,6 @@ class YSMPageHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
-        scrollView.backgroundColor = .yellow
         scrollView.frame = CGRect(x: 0, y: frame.height-50, width: frame.width, height: 50)
         scrollView.autoresizingMask = [.flexibleTopMargin]
         addSubview(scrollView)

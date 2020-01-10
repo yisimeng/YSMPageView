@@ -108,6 +108,15 @@ extension YSMPageContentView: UICollectionViewDelegate {
         let currentIndex: Int = Int(scrollView.contentOffset.x / scrollView.bounds.size.width)
         contentDelegate?.contentView(self, didScrollToChildViewControllerAt: currentIndex)
     }
+    
+    // 水平滑动时，将当前偏移置为原始值，以防header回弹
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard let cell: UICollectionViewCell = visibleCells.first else {return}
+        guard let indexPath: IndexPath = self.indexPath(for: cell) else {return}
+        let childViewController: UIViewController = viewControllers[indexPath.row]
+        guard let scrollView = childViewController.childScrollView else { return }
+        scrollView.contentOffset = CGPoint(x: 0, y: -headerViewHeight)
+    }
 }
 
 // KVO

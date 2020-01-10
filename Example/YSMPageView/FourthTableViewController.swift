@@ -15,6 +15,10 @@ class FourthTableViewController: UITableViewController {
 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier4")
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(pageTitle)
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
